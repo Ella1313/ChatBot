@@ -15,7 +15,7 @@ The ChatBot Database project aims to create a SQLite database. The database cons
 # Setup
 1. Ensure you have Java and Gradle installed on your machine.
 2. Clone the project repository from GitHub.
-3. Configure your development environment with the required dependencies, including SQLite.
+3. Configure your development environment with the required dependencies, including SQLite (implementation 'org.xerial:sqlite-jdbc:3.42.0.0').
 4. Open the project in your preferred IDE.
 
 
