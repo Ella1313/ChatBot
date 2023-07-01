@@ -14,7 +14,7 @@ public class ChatBotExceptionTest {
     public void testCreateUserWithInvalidEmail() throws SQLException {
         Assertions.assertThrows(SQLException.class, ()-> {
             try (Connection con = DriverManager.getConnection(DB_URL)) {
-                // missing required field "email"
+                // invalid "email" field
                 String createUserSql = "INSERT INTO Users (email) VALUES ('johnexample.com')";
                 executeStatement(con, createUserSql);
             }
